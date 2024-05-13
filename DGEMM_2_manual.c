@@ -93,11 +93,11 @@ int main() {
 }
 
 
-// gcc -o DGEMM_2_manual DGEMM_2_manual.c -m64
-// gcc -o DGEMM_2_manual -O1 DGEMM_2_manual.c -m64
-// gcc -o DGEMM_2_manual -O2 DGEMM_2_manual.c -m64
-// gcc -o DGEMM_2_manual -O3 DGEMM_2_manual.c -m64
-// ./DGEMM_2_manual.exe
+// gcc -o DGEMM DGEMM_2.c -m64
+// gcc -o DGEMM_2 -O1 DGEMM_2.c -m64
+// gcc -o DGEMM_2 -O2 DGEMM_2.c -m64
+// gcc -o DGEMM_2 -O3 DGEMM_2.c -m64
+// ./DGEMM_2.exe
 
 // 1024, 2048, 4096, 8192
 
