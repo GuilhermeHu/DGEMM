@@ -1,4 +1,4 @@
-// Double precision GEneral Matrix Multiply
+// Going faster 2: C
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -120,9 +120,10 @@ int main() {
 
 
 
-//  CÓDIGO QUE FUNCIONA
 
-// // Double precision GEneral Matrix Multiply
+//  CÓDIGO ALTERNATIVO
+
+// // Going faster 2: C
 
 // #include <stdio.h>
 // #include <stdlib.h>
