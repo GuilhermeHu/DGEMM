@@ -104,5 +104,5 @@ int main(){
   return 0;
 }
 
-// gcc -O3 -mavx2 -o DGEMM_3_teste DGEMM_3_teste.c 
-// ./DGEMM_3_teste.exe
+// gcc -O3 -mavx2 -o DGEMM_3 DGEMM_3.c 
+// ./DGEMM_3.exe
