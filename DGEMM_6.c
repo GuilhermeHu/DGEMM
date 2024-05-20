@@ -1,4 +1,4 @@
-// Going Faster 5: Cache Blocking (CB)
+// Going Faster 6: Multiprocessador (MP)
 
 #include <x86intrin.h>
 #include <immintrin.h>
