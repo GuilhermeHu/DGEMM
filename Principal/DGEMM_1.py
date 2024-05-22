@@ -2,7 +2,7 @@
 
 
 import sys, time, random
-from time import perf_counter # benchmarking: https://superfastpython.com/benchmark-time-perf-counter/
+from time import perf_counter 
 
 
 # tamanho da matriz
