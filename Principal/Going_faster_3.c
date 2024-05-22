@@ -7,7 +7,7 @@
 #include <windows.h>
 #include <math.h>
 
-#define N (size_t)8e3 // 2e3 já fica bastante tempo
+#define N (size_t)8e3
 
 
 double A[N][N], B[N][N], C[N][N];
