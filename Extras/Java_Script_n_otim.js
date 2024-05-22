@@ -1,5 +1,6 @@
 // Autor: Bernardo Pozzato
 
+
 class Matrix {
     constructor(rows, cols, isRandom = false) {
         this.rows = rows;
