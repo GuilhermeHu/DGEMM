@@ -124,5 +124,5 @@ int main(){
   return 0;
 }
 
-// gcc -O3 -mavx2 -o DGEMM_6 DGEMM_6.c 
+// gcc -O3 -fopenmp -mavx2 -o DGEMM_6 DGEMM_6.c 
 // ./DGEMM_6.exe
