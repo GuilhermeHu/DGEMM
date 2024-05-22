@@ -7,7 +7,7 @@
 #include <windows.h>
 #include <math.h>
 
-#define N (size_t)8192
+#define N (size_t)8192 
 
 
 double A[N][N], B[N][N], C[N][N];
@@ -104,5 +104,7 @@ int main(){
   return 0;
 }
 
-// gcc -O3 -mavx2 -o DGEMM_3 DGEMM_3.c 
-// ./DGEMM_3.exe
+// gcc -O3 -mavx2 -o DGEMM_3_teste DGEMM_3_teste.c 
+// ./DGEMM_3_teste.exe
+
+// 1024, 2048, 4096, 8192
