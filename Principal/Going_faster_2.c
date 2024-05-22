@@ -46,12 +46,12 @@ int main() {
     printf("Insira o valor de n: ");
     scanf("%zu", &n);
 
-    LARGE_INTEGER frequency;
-    QueryPerformanceFrequency(&frequency);
-
     double executionTimes[10];
     double totalExecutionTime = 0.0;
 
+    LARGE_INTEGER frequency;
+    QueryPerformanceFrequency(&frequency);
+ 
     for (int i = 0; i < 10; ++i) {
         make_rand_matrix(n, A, B);
 
