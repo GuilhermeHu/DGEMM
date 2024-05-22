@@ -9,11 +9,6 @@ from time import perf_counter
 n = int(sys.argv[1])
 # n = 200
 
-# Geração de matrizes aleatórias
-A = [[random.random() for _ in range(n)] for _ in range(n)]
-B = [[random.random() for _ in range(n)] for _ in range(n)]
-C = [[0 for _ in range(n)] for _ in range(n)]
-
 
 def DGEMM(A, B, C):
   for i in range(n):
