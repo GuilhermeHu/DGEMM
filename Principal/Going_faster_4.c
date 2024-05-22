@@ -13,17 +13,6 @@
 
 double A[N][N], B[N][N], C[N][N];
 
-void print_matrix(size_t n, double* A){
-  for (size_t i = 0; i < n; i++){   
-    for (size_t j = 0; j < n; j++){
-      printf("%8.2lf ", A[(i * N) + j]);
-    }
-    printf("\n");
-  }
-  printf("\n");
-}
-
-
 void dgemm(size_t n, double* A, double* B, double* C){ //A * B^T = C^T
 	for (size_t i = 0; i < n; i++)
 		for (size_t j = 0; j < n; j += 4 * UNROLL){
@@ -52,6 +41,18 @@ void make_rand_matrix(size_t n, double* A, int offset) {
         }
     }
 }
+
+
+void print_matrix(size_t n, double* A){
+  for (size_t i = 0; i < n; i++){   
+    for (size_t j = 0; j < n; j++){
+      printf("%8.2lf ", A[(i * N) + j]);
+    }
+    printf("\n");
+  }
+  printf("\n");
+}
+
 
 int main(){
 
