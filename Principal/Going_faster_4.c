@@ -23,7 +23,8 @@ void dgemm(size_t n, double* A, double* B, double* C){ //A * B^T = C^T
 			for (size_t k = 0; k < n; k++){
 				__m256d bb = _mm256_broadcast_sd(A + (i * N) + k);
 				for (int r = 0; r < UNROLL; r++){
-					c[r] = _mm256_add_pd(c[r], _mm256_mul_pd(bb, _mm256_load_pd(B + (N * k) + j + 4 * r)));
+					c[r] = _mm256_add_pd(c[r], _mm256_mul_pd(bb, 
+					       _mm256_load_pd(B + (N * k) + j + 4 * r)));
 				}
 			}
 			for (int r = 0; r < UNROLL; r++)
